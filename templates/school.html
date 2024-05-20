@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>
+            SCHOOL ADMISSION 
+        </h1>
+        <form method="POST">
+        {% csrf_token %}
+        {{ESFO.as_p}}#to put the data in line by line
+        {{ESFO.as_ul}}#to put the data in dot form
+        {{ESFO.as_table}} #to put the data in the same line
+    
+        <input type="submit">
+        </form>
+    </center>
+</body>
+</html>
